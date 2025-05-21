@@ -1,0 +1,21 @@
+{
+  "services": [
+    {
+      "name": "shadowsocks",
+      "source": {
+        "type": "dockerfile"
+      },
+      "envs": {
+        "PASSWORD": {
+          "required": true
+        }
+      },
+      "ports": [
+        {
+          "port": 8388,
+          "protocol": "tcp"
+        }
+      ]
+    }
+  ]
+}
